@@ -1,0 +1,221 @@
+{% from 'macros/helpers.html' import sprite %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include "shared/app-icons.html" %}
+    {% block head %}
+
+    {% endblock %}
+  </head>
+  <body class="impress-not-supported">
+    {% block content %}
+
+    {% endblock %}
+    {% block javascript %}
+      <script src="javascripts/app.js"></script>
+
+      <script>
+      if ("ontouchstart" in document.documentElement) {
+          document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+      }
+      </script>
+
+
+
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+      <script>$(document).ready(function(){
+        impress().init();
+        $('#yes1').on('click', function(e) {
+          impress().goto(1);
+           e.stopPropagation();
+        });
+        $('#yesOne').on('click', function(e) {
+          impress().goto(20);
+           e.stopPropagation();
+        });
+        $('#noOne').on('click', function(e) {
+          impress().goto(4);
+           e.stopPropagation();
+        });
+        $('#no1').on('click', function(e) {
+          impress().goto(2);
+           e.stopPropagation();
+        });
+
+        $('#yes2').on('click', function(e) {
+          impress().goto(4);
+           e.stopPropagation();
+        });
+        $('#no2').on('click', function(e) {
+          impress().goto(3);
+           e.stopPropagation();
+        });
+
+        $('#yes3').on('click', function(e) {
+          impress().goto(5);
+           e.stopPropagation();
+        });
+        $('#no3').on('click', function(e) {
+          impress().goto(3);
+           e.stopPropagation();
+        });
+
+        $('#no4').on('click', function(e) {
+          impress().goto(0);
+           e.stopPropagation();
+        });
+        $('#no6').on('click', function(e) {
+          impress().goto(0);
+           e.stopPropagation();
+        });
+
+        $('#yes5').on('click', function(e) {
+          impress().goto(5);
+           e.stopPropagation();
+        });
+        $('#no5').on('click', function(e) {
+          impress().goto(21);
+           e.stopPropagation();
+        });
+        $('#no7').on('click', function(e) {
+          impress().goto(5);
+           e.stopPropagation();
+        });
+        $('#yes7').on('click', function(e) {
+          impress().goto(7);
+           e.stopPropagation();
+        });
+        $('#yes8').on('click', function(e) {
+          impress().goto(8);
+           e.stopPropagation();
+        });
+        $('#yes9').on('click', function(e) {
+          impress().goto(26);
+           e.stopPropagation();
+        });
+        $('#no9').on('click', function(e) {
+          impress().goto(26);
+           e.stopPropagation();
+        });
+
+        $('#no10').on('click', function(e) {
+          impress().goto(24);
+           e.stopPropagation();
+        });
+        $('#yes10').on('click', function(e) {
+          impress().goto(5);
+           e.stopPropagation();
+        });
+
+        $('#yes11').on('click', function(e) {
+          impress().goto(13);
+           e.stopPropagation();
+        });
+        $('#no11').on('click', function(e) {
+          impress().goto(23);
+           e.stopPropagation();
+        });
+
+        $('#yes14').on('click', function(e) {
+          impress().goto(27);
+           e.stopPropagation();
+        });
+        $('#no14').on('click', function(e) {
+          impress().goto(29);
+           e.stopPropagation();
+        });
+
+        $('#yes15').on('click', function(e) {
+          impress().goto(10);
+           e.stopPropagation();
+        });
+        $('#no15').on('click', function(e) {
+          impress().goto(15);
+           e.stopPropagation();
+        });
+
+        $('#no16').on('click', function(e) {
+          impress().goto(10);
+           e.stopPropagation();
+        });
+        $('#yes16').on('click', function(e) {
+          impress().goto(11);
+           e.stopPropagation();
+        });
+
+        $('#no8').on('click', function(e) {
+          impress().goto(9);
+           e.stopPropagation();
+        });
+
+        $('#no20').on('click', function(e) {
+          impress().goto(10);
+           e.stopPropagation();
+        });
+        $('#yes20').on('click', function(e) {
+          impress().goto(11);
+           e.stopPropagation();
+        });
+
+        $('#no21').on('click', function(e) {
+          impress().goto(23);
+           e.stopPropagation();
+        });
+        $('#yes21').on('click', function(e) {
+          impress().goto(14);
+           e.stopPropagation();
+        });
+
+        $('#no22').on('click', function(e) {
+          impress().goto(22);
+           e.stopPropagation();
+        });
+        $('#yes22').on('click', function(e) {
+          impress().goto(23);
+           e.stopPropagation();
+        });
+        $('#yes23').on('click', function(e) {
+          impress().goto(6);
+           e.stopPropagation();
+        });
+        $('#no23').on('click', function(e) {
+          impress().goto(24);
+           e.stopPropagation();
+        });
+        $('#no24').on('click', function(e) {
+          impress().goto(21);
+           e.stopPropagation();
+        });
+        $('#yes24').on('click', function(e) {
+          impress().goto(27);
+           e.stopPropagation();
+        });
+        $('#no25').on('click', function(e) {
+          impress().goto(10);
+           e.stopPropagation();
+        });
+        $('#yes25').on('click', function(e) {
+          impress().goto(25);
+           e.stopPropagation();
+        });
+
+        $('#yes28').on('click', function(e) {
+          impress().goto(28);
+           e.stopPropagation();
+        });
+        $('#no28').on('click', function(e) {
+          impress().goto(22);
+           e.stopPropagation();
+        });
+      });
+      </script>
+    {% endblock %}
+  </body>
+</html>
