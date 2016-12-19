@@ -2,7 +2,7 @@
 
 
 ```bash
-git clone git@github.com:hzdg/christmas-letter.git
+git clone git@github.com:babbagescabbages/christmas-letter.git
 cd christmas-letter
 npm install
 npm start
