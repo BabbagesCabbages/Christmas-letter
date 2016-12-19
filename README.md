@@ -1,9 +1,9 @@
-##HZ CLUB PICKER APP
+##Christmas Letter
 
 
 ```bash
-git clone git@github.com:hzdg/hz-clubs-picker.git
-cd hz-clubs-picker
+git clone git@github.com:hzdg/christmas-letter.git
+cd christmas-letter
 npm install
 npm start
 ```
